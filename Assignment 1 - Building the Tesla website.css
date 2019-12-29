@@ -123,6 +123,10 @@
     display: none;
 }
 
+.adds {
+    font-family: "HeiT ASC Traditional Chinese", "M Hei PRC W45", "AXIS Font Japanese W55", "FB New Gothic", Swissra, "Gotham Book", system, sans-serif;
+}
+
 .adds.head {
     display: none;
 }
@@ -261,10 +265,8 @@ h1.fourth-page {
     font-family: "HeiT ASC Traditional Chinese", "M Hei PRC W45", "AXIS Font Japanese W55", "FB New Gothic", Swissra, "Gotham Medium", system, sans-serif;
     font-size: x-large;
     color: #171a20;
-    font-style: normal;
-    font-weight: 500;
     font-size: 40px;
-    Line Height: 48px;
+    font-weight: normal;
 }
 
 @media (min-width: 640px) {
