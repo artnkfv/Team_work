@@ -3,12 +3,16 @@
     margin: 0;
 }
 
-.body {
-    position: relative;
+.body,
+html {
+    height: 100vh;
+    text-decoration: none;
+    overflow: scroll;
+    overflow-x: hidden;
+
 }
 
 .page {
-    /* width: 100vw; */
     height: 100vh;
     display: block;
 }
@@ -18,13 +22,21 @@
     text-align: center;
     background-image: url("tesla_homepage_desktop.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     animation: animateBg forwards 1s ease-in;
-    
+
 }
-@keyframes animateBg{
-    from { background-size: 100%; }
-    to { background-size: 170%; }
+
+@keyframes animateBg {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 170%;
+    }
 }
 
 
@@ -197,6 +209,16 @@ h3.second-page {
     background-position: center;
 }
 
+#myVideo {
+    position: absolute;
+    right: 0;
+    /* bottom: 0; */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+
+}
+
 h1.third-page {
     position: absolute;
     top: 100px;
@@ -226,7 +248,7 @@ h1.third-page {
     background-image: url("blue-hero-mobile.jpg");
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 h2.fourth-page {
@@ -248,16 +270,19 @@ h1.fourth-page {
 .footer {
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 20px;
     bottom: 0;
     background-color: white;
     display: block;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .foot-link {
     display: list-item;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
 }
 
 .not-mobile {
@@ -272,7 +297,7 @@ h1.fourth-page {
     font-family: "HeiT ASC Traditional Chinese", "M Hei PRC W45", "AXIS Font Japanese W55", "FB New Gothic", Swissra, "Gotham Medium", system, sans-serif;
     font-size: x-large;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: normal;
 }
 
@@ -282,26 +307,33 @@ h1.fourth-page {
         position: relative;
         top: 20px;
     }
+
     .bar.main a {
         text-decoration: none;
         color: beige;
         margin: 0 10px;
     }
+
     .second.page {
         background-image: url("homepage_energy_hero_desktop.jpg");
     }
+
     .order-now {
         bottom: 280px;
     }
+
     .third.page {
         background-image: url("accessories-hero-desktop-poster.png");
     }
+
     .shop-now {
         bottom: 400px;
     }
+
     .fourth.page {
         background-image: url("blue-hero-desktop.jpg");
     }
+
     .foot-link {
         display: inline-block;
     }
@@ -321,6 +353,7 @@ h1.fourth-page {
         right: -7vw;
         text-align: right;
     }
+
     .bar.side a {
         text-decoration: none;
         color: beige;
