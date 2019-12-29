@@ -8,7 +8,7 @@
 }
 
 .page {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: block;
 }
@@ -19,7 +19,14 @@
     background-image: url("tesla_homepage_desktop.jpg");
     background-size: cover;
     background-position: center;
+    animation: animateBg forwards 2s ease-in;
+    
 }
+@keyframes animateBg{
+    from { background-size: 100%; }
+    to { background-size: 200%; }
+}
+
 
 .hamburger-icon {
     position: absolute;
@@ -260,7 +267,7 @@ h1.fourth-page {
     text-decoration: none;
     font-family: "HeiT ASC Traditional Chinese", "M Hei PRC W45", "AXIS Font Japanese W55", "FB New Gothic", Swissra, "Gotham Medium", system, sans-serif;
     font-size: x-large;
-    color:#171a20;
+    color: white;
     font-size: 40px;
     font-weight: normal;
 }
