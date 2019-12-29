@@ -260,8 +260,9 @@ h1.fourth-page {
     text-decoration: none;
     font-family: "HeiT ASC Traditional Chinese", "M Hei PRC W45", "AXIS Font Japanese W55", "FB New Gothic", Swissra, "Gotham Medium", system, sans-serif;
     font-size: x-large;
-    color: white;
-    Style normal Weight 500 Size 40px Line Height 48px Color #171a20
+    color:#171a20;
+    font-size: 40px;
+    font-weight: normal;
 }
 
 @media (min-width: 640px) {
